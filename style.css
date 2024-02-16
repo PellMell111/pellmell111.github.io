@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(180deg, hsla(50, 98%, 82%, 1) 30%, hsla(35, 87%, 75%, 1) 81%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo {
+    background-image: url('imgs/logo.png');
+    background-size: contain;
+    color: transparent;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkWsp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 30px;
+    background: linear-gradient(135deg, #25d366, #128C7E);
+}
+
+.presentacion {
+    text-align: justify;
+}
+
+.slideContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background: none;
+}
+
+.slide {
+    display: none;
+}
+
+.firstSlide {
+    display: block;
+}
+
+.prevButton, .nextButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nextButton {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevButton:hover, .nextButton:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.imgText {
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numberText {
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.slideshowDot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .slideshowDot:hover {
+    background-color: black;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+    }
+
+    .linkWsp {
+        margin: 50px 70px 0 70px;
+        padding: 5px 0;
+        border-radius: 20px;
+    }    
+
+    .presentacion, .buildMessage {
+        margin: 30px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Estilos para escritorio */
+}
+  
