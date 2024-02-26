@@ -148,10 +148,53 @@ body {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Estilos para tablets */
+    .logo {
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+    }
+
+    .linkWsp {
+        margin: 50px 70px 0 70px;
+        padding: 5px 0;
+        border-radius: 20px;
+    }
+
+    .presentacion, .buildMessage {
+        margin: 30px;
+    }
+
+    .buildMessage {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
-    /* Estilos para escritorio */
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    .logo {
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .linkWsp {
+        margin: 30px 30vw;
+        padding: 10px 0;
+        border-radius: 30px;
+    }
+
+    .presentacion, .buildMessage {
+        margin: 50px 10vw;
+        font-size: 30px;
+    }
+
+    .buildMessage {
+        text-align: center;
+    }
 }
   
